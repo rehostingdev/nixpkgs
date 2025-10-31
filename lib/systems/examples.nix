@@ -206,6 +206,11 @@ rec {
     };
   };
 
+  xtensa = {
+    config = "xtensa-elf";
+    libc = "newlib";
+  };
+
   mmix = {
     config = "mmix-unknown-mmixware";
     libc = "newlib";

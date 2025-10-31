@@ -93,6 +93,7 @@ let
     "s390x-none"
     "vc4-none"
     "x86_64-none"
+    "xtensa-none"
 
     # OpenBSD
     "i686-openbsd"
@@ -143,6 +144,7 @@ in
   s390x = filterDoubles predicates.isS390x;
   loongarch64 = filterDoubles predicates.isLoongArch64;
   js = filterDoubles predicates.isJavaScript;
+  xtensa = filterDoubles predicates.isXtensa;
 
   bigEndian = filterDoubles predicates.isBigEndian;
   littleEndian = filterDoubles predicates.isLittleEndian;

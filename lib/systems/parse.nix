@@ -397,6 +397,12 @@ rec {
         significantByte = littleEndian;
         family = "javascript";
       };
+
+      xtensa = {
+        bits = 32;
+        significantByte = littleEndian;
+        family = "xtensa";
+      };
     }
     // {
       # aliases

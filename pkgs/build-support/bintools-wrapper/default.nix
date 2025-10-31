@@ -165,6 +165,8 @@ let
       "${sharedLibraryLoader}/lib/ld-linux-riscv*.so.1"
     else if targetPlatform.isLoongArch64 then
       "${sharedLibraryLoader}/lib/ld-linux-loongarch*.so.1"
+    else if targetPlatform.isXtensa then
+      "${sharedLibraryLoader}/lib/ld-linux-xtensa*.so.1"
     else if targetPlatform.isDarwin then
       "/usr/lib/dyld"
     else if targetPlatform.isFreeBSD then

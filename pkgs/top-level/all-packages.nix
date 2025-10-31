@@ -6082,6 +6082,8 @@ with pkgs;
 
   or1k-newlib = callPackage ../development/misc/or1k/newlib.nix { };
 
+  xtensa-newlib = callPackage ../development/misc/xtensa/newlib.nix { };
+
   vcsh = callPackage ../by-name/vc/vcsh/package.nix {
     automake = automake116x;
   };
@@ -7332,6 +7334,8 @@ with pkgs;
       vc4-newlib
     else if libc == "newlib" && stdenv.hostPlatform.isOr1k then
       or1k-newlib
+    else if libc == "newlib" && stdenv.hostPlatform.isXtensa then
+      xtensa-newlib
     else if libc == "newlib" then
       newlib
     else if libc == "newlib-nano" then

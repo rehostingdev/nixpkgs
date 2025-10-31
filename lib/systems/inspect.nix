@@ -249,6 +249,11 @@ rec {
     isJavaScript = {
       cpu = cpuTypes.javascript;
     };
+    isXtensa = {
+      cpu = {
+        family = "xtensa";
+      };
+    };
 
     is32bit = {
       cpu = {
